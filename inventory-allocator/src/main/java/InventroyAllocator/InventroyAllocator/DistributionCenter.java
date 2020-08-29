@@ -22,6 +22,8 @@ public class DistributionCenter {
 	
 	//Takers order and return shipment fulfilling the order from each warehouse
 	public ArrayList<ShippedItem> processOrder() {
+		
+		if(order.isEmpty()) return new ArrayList<ShippedItem>();
 		ArrayList<ShippedItem> shipment= new ArrayList<ShippedItem>();
 		
 		for(Warehouse w: wareHouses) {

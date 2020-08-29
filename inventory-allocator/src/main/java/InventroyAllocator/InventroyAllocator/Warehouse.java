@@ -32,7 +32,7 @@ public class Warehouse {
 			}else {
 				currentItemCount-=orderCount;
 				inventory.put(itemName, currentItemCount);
-				shipment.addItems(itemName, currentItemCount);
+				shipment.addItems(itemName, orderCount);
 				}
 			}
 		}
