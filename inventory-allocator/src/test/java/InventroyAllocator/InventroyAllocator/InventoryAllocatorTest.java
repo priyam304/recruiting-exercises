@@ -165,7 +165,7 @@ class InventoryAllocatorTest {
 	}
 	
 	@Test
-	void Empty_WareHouse() {
+	void Empty_Order() {
 		dc= new DistributionCenter();
 		HashMap<String,Integer> map1=new HashMap<String,Integer>();
 		map1.put("apple",5);
